@@ -1,0 +1,18 @@
+#emails-list {
+    float: left;
+    width: 25%;
+}
+
+.emails-list-item {
+    box-shadow: 1px 2px 5px 1px rgba(0,0,0,.5);
+    padding: 0.5rem 1rem;
+    background-color: rgba(55, 71, 79, 1);
+}
+
+.emails-list-item .from {
+    font-size: 1.2rem;
+}
+
+.emails-list-item .body {
+    opacity: 0.9;
+}

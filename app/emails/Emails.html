@@ -1,0 +1,10 @@
+<div id="emails">
+    <div id="emails-list">
+        <div class="emails-list-item" ng-repeat="e in vm.emails">
+            <div class="from">{{e.user_from}}</div>
+            <div class="subject">{{e.subject}}</div>
+            <div class="body">{{e.body}}</div>
+        </div>
+    </div>
+    <div ui-view></div>
+</div>

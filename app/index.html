@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="emailer">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emailer</title>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/satellizer/dist/satellizer.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/emails.css">
+</head>
+
+<body>
+    <div ng-include="'header/Header.html'" ng-controller="HeaderCtrl as vm"></div>
+    <div ui-view></div>
+
+    <script src="app.js"></script>
+
+    <script src="header/HeaderCtrl.js"></script>
+    <script src="home/HomeCtrl.js"></script>
+    <script src="emails/EmailsCtrl.js"></script>
+
+    <script src="common/SocketSvc.js"></script>
+</body>
+</html>

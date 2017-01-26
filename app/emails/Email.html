@@ -1,0 +1,19 @@
+<div id="email">
+    <form ng-submit="vm.send()">
+        <div class="form-group row">
+            <label for="inputTo" class="col-sm-2 col-form-label">To</label>
+            <div class="col-sm-10">
+                <input type="text" id="inputTo" class="form-control" ng-model="vm.email.user_to">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-12">
+                <input type="text" id="inputSubject" class="form-control" placeholder="Subject" ng-model="vm.email.subject">
+            </div>
+        </div>
+        <div class="form-group">
+            <textarea name="inputBody" id="inputBody" rows="10" class="form-control" ng-model="vm.email.body"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Send</button>
+    </form>
+</div>
